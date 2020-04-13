@@ -7,7 +7,7 @@ class Vehiculo {
     velocidadMaxima = 0
     aceleracion = 0
 
-    constructor(cantidadDePuertas,aceleracion,velocidadMaxima,año,marcaDeFabricante,inventor) {
+    constructor(cantidadDePuertas, aceleracion, velocidadMaxima, año, marcaDeFabricante, inventor) {
         this.nombre = nombre
         this.cantidadDePuertas = cantidadDePuertas
         this.año = año
@@ -31,7 +31,7 @@ class Vehiculo {
 }
 
 
-class porsche extends Vehiculo{
+class Porsche extends Vehiculo{
     constructor(nombre) {
         super(2,'3,2' ,312, 2019,'Porsche AG', 'Ferdinand Porsche')
         this.nombre = nombre
@@ -39,7 +39,7 @@ class porsche extends Vehiculo{
 }
 
 class Avion extends Vehiculo {
-    constructor(nombre,cantidadDeMotores,peso) {
+    constructor(nombre, cantidadDeMotores, peso) {
         super('','','2.700kph',1997,'Sukhoi Corporation.','Tsibin LL')
         // super(,,  ,' km/h')
         this.nombre = nombre
@@ -48,13 +48,13 @@ class Avion extends Vehiculo {
     }         
 }
 
-class lancha extends Vehiculo {
+class Lancha extends Vehiculo {
     constructor(nombre) {
         super('','aceleracion',' 217 km/h ',2007,'AMG','')
         this.nombre = nombre
     }
 }
 
-const Porsche = new porsche('porsche').arrancar()
+const Porsche = new Porsche('porsche').arrancar()
 const Sukhoi = new Avion('Sukhoi Su-47',2, '16.380kg').despegue()
-const Marauder_AMG = new lancha(`50' Marauder AMG`).navegar()
+const Marauder_AMG = new Lancha(`50' Marauder AMG`).navegar()
