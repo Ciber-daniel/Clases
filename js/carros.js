@@ -7,7 +7,7 @@ class Vehiculo {
     velocidadMaxima = 0
     aceleracion = 0
 
-    constructor(cantidadDePuertas, aceleracion, velocidadMaxima, año, marcaDeFabricante, inventor) {
+    constructor(nombre, cantidadDePuertas, aceleracion, velocidadMaxima, año, marcaDeFabricante, inventor) {
         this.nombre = nombre
         this.cantidadDePuertas = cantidadDePuertas
         this.año = año
@@ -58,5 +58,5 @@ const porsche = new Porsche('porsche')
 porsche.arrancar()
 const sukhoi = new AvionDeCombate('Sukhoi Su-47',2, 16380)
 sukhoi.despegar()
-const sarauder_AMG = new Lancha(`50' Marauder AMG`)
-sarauder_AMG.navegar()
+const sarauderAmg = new Lancha(`50' Marauder AMG`)
+sarauderAmg.navegar()
