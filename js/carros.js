@@ -22,25 +22,25 @@ class Vehiculo {
     }
 
     despegue() {
-        console.log(`El avion ${this.nombre} ha despegado, fue fabricado en ${this.año} por ${this.marcaDeFabricante} y diseñado por ${this.inventor}. Esta hermosa nave consigue una velocidad maxima de ${this.velocidadMaxima} a pesar de su peso de ${this.peso}`)
+        console.log(`El avion ${this.nombre} ha despegado, fue fabricado en ${this.año} por ${this.marcaDeFabricante} y diseñado por ${this.inventor}. Esta hermosa nave consigue una velocidad maxima de ${this.velocidadMaxima}kph a pesar de su peso de ${this.peso}`)
     } 
 
     navegar() {
-        console.log(`Ya estoy ladillado, esto se llama ${this.nombre} es una lancha de alta velocidad que llega a ${this.velocidadMaxima} fabricada en ${this.año} por ${this.marcaDeFabricante}`)
+        console.log(`Ya estoy ladillado, esto se llama ${this.nombre} es una lancha de alta velocidad que llega a ${this.velocidadMaxima}Kph fabricada en ${this.año} por ${this.marcaDeFabricante}`)
     }
 }
 
 
 class Porsche extends Vehiculo{
     constructor(nombre) {
-        super(2,'3,2' ,312, 2019,'Porsche AG', 'Ferdinand Porsche')
+        super(2, 3.2 , 312, 2019, 'Porsche AG', 'Ferdinand Porsche')
         this.nombre = nombre
     }
 }
 
 class Avion extends Vehiculo {
     constructor(nombre, cantidadDeMotores, peso) {
-        super('','','2.700kph',1997,'Sukhoi Corporation.','Tsibin LL')
+        super(0, 0, 2700, 1997, 'Sukhoi Corporation.', 'Tsibin LL')
         // super(,,  ,' km/h')
         this.nombre = nombre
         this.cantidadDeMotores = cantidadDeMotores
@@ -50,7 +50,7 @@ class Avion extends Vehiculo {
 
 class Lancha extends Vehiculo {
     constructor(nombre) {
-        super('','aceleracion',' 217 km/h ',2007,'AMG','')
+        super(0, 0, 217 ,2007,'AMG','')
         this.nombre = nombre
     }
 }
