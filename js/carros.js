@@ -21,8 +21,8 @@ class Vehiculo {
         console.log(`El ${this.nombre} acaba de empezar su recorrido, con una aceleracion de 0kph - 100kph en tan solo ${this.aceleracion}s, un novedoso diseño de ${this.cantidadDePuertas} puertas. Fabricado en ${this.año} por ${this.marcaDeFabricante}. Fue diseñado por ${this.inventor}`)
     }
 
-    despegue() {
-        console.log(`El avion ${this.nombre} ha despegado, fue fabricado en ${this.año} por ${this.marcaDeFabricante} y diseñado por ${this.inventor}. Esta hermosa nave consigue una velocidad maxima de ${this.velocidadMaxima}kph a pesar de su peso de ${this.peso}`)
+    despegar() {
+        console.log(`El avion ${this.nombre} ha despegado, fue fabricado en ${this.año} por ${this.marcaDeFabricante} y diseñado por ${this.inventor}. Esta hermosa nave consigue una velocidad maxima de ${this.velocidadMaxima}kph a pesar de su peso de ${this.peso}kg`)
     } 
 
     navegar() {
@@ -55,5 +55,5 @@ class Lancha extends Vehiculo {
 }
 
 const Porsche = new Porsche('porsche').arrancar()
-const Sukhoi = new Avion('Sukhoi Su-47',2, '16.380kg').despegue()
+const Sukhoi = new Avion('Sukhoi Su-47',2, 16380).despegue()
 const Marauder_AMG = new Lancha(`50' Marauder AMG`).navegar()
