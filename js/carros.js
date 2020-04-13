@@ -55,5 +55,5 @@ class Lancha extends Vehiculo {
 }
 
 const Porsche = new Porsche('porsche').arrancar()
-const Sukhoi = new Avion('Sukhoi Su-47',2, 16380).despegue()
+const Sukhoi = new Avion('Sukhoi Su-47',2, 16380).despegar()
 const Marauder_AMG = new Lancha(`50' Marauder AMG`).navegar()
