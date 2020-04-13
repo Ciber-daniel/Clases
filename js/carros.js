@@ -8,6 +8,7 @@ class Vehiculo {
     aceleracion = 0
 
     constructor(cantidadDePuertas,aceleracion,velocidadMaxima,año,marcaDeFabricante,inventor) {
+        this.nombre = nombre
         this.cantidadDePuertas = cantidadDePuertas
         this.año = año
         this.marcaDeFabricante = marcaDeFabricante
