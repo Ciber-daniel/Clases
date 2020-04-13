@@ -41,7 +41,6 @@ class Porsche extends Vehiculo{
 class Avion extends Vehiculo {
     constructor(nombre, cantidadDeMotores, peso) {
         super(0, 0, 2700, 1997, 'Sukhoi Corporation.', 'Tsibin LL')
-        // super(,,  ,' km/h')
         this.nombre = nombre
         this.cantidadDeMotores = cantidadDeMotores
         this.peso = peso
