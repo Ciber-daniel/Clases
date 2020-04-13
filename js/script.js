@@ -1,7 +1,7 @@
 class Animal {
 
     nombreAnimal = ''
-    numeroDePatas = ''
+    numeroDePatas = 0
     especie = ''
     nombre = ''
 
