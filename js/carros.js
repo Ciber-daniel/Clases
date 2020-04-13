@@ -38,7 +38,7 @@ class Porsche extends Vehiculo{
     }
 }
 
-class Avion extends Vehiculo {
+class AvionDeCombate extends Vehiculo {
     constructor(nombre, cantidadDeMotores, peso) {
         super(0, 0, 2700, 1997, 'Sukhoi Corporation.', 'Tsibin LL')
         this.nombre = nombre
@@ -54,6 +54,9 @@ class Lancha extends Vehiculo {
     }
 }
 
-const Porsche = new Porsche('porsche').arrancar()
-const Sukhoi = new Avion('Sukhoi Su-47',2, 16380).despegar()
-const Marauder_AMG = new Lancha(`50' Marauder AMG`).navegar()
+const porsche = new Porsche('porsche')
+porsche.arrancar()
+const sukhoi = new AvionDeCombate('Sukhoi Su-47',2, 16380)
+sukhoi.despegar()
+const sarauder_AMG = new Lancha(`50' Marauder AMG`)
+sarauder_AMG.navegar()
