@@ -1,11 +1,11 @@
-class vehiculo {
+class Vehiculo {
 
-    cantidadDePuertas = ''
-    año = ''
+    cantidadDePuertas = 0
+    año = 0
     marcaDeFabricante = ''
     inventor = ''
-    velocidadMaxima = ''
-    aceleracion = ''
+    velocidadMaxima = 0
+    aceleracion = 0
 
     constructor(cantidadDePuertas,aceleracion,velocidadMaxima,año,marcaDeFabricante,inventor) {
         this.cantidadDePuertas = cantidadDePuertas
@@ -30,14 +30,14 @@ class vehiculo {
 }
 
 
-class porsche extends vehiculo{
+class porsche extends Vehiculo{
     constructor(nombre) {
         super(2,'3,2' ,312, 2019,'Porsche AG', 'Ferdinand Porsche')
         this.nombre = nombre
     }
 }
 
-class Avion extends vehiculo {
+class Avion extends Vehiculo {
     constructor(nombre,cantidadDeMotores,peso) {
         super('','','2.700kph',1997,'Sukhoi Corporation.','Tsibin LL')
         // super(,,  ,' km/h')
@@ -47,7 +47,7 @@ class Avion extends vehiculo {
     }         
 }
 
-class lancha extends vehiculo {
+class lancha extends Vehiculo {
     constructor(nombre) {
         super('','aceleracion',' 217 km/h ',2007,'AMG','')
         this.nombre = nombre
